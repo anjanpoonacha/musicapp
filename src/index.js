@@ -19,7 +19,7 @@ let songIndex = Math.floor(Math.random() * 8);
 
 const getTracks = async () => {
   const tracks = await (
-    await fetch("http://5dd1894f15bbc2001448d28e.mockapi.io/playlist")
+    await fetch("https://5dd1894f15bbc2001448d28e.mockapi.io/playlist")
   ).json();
   return tracks;
 };
