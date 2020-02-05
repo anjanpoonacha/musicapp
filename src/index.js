@@ -1,3 +1,4 @@
+import "@babel/polyfill";
 const musicContainer = document.getElementById("music-container");
 const playlist = document.getElementById("playlist");
 const audio = document.getElementById("audio");
