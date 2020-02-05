@@ -1,0 +1,30 @@
+{
+  "name": "musicapp",
+  "version": "1.0.0",
+  "description": "Vanilla Music App",
+  "main": "index.js",
+  "scripts": {
+    "build:js": "parcel build ./src/index.js --out-dir ./public/ --out-file bundle.js",
+    "compile:sass": "node-sass ./src/sass/main.scss ./src/css/style.css -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anjanpoonacha/musicapp.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JAVASCRIPT"
+  ],
+  "author": "Anjan Poonacha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anjanpoonacha/musicapp/issues"
+  },
+  "homepage": "https://github.com/anjanpoonacha/musicapp#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.1",
+    "parcel-bundler": "^1.12.4"
+  }
+}
