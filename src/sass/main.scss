@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
-
 *,
 *::after,
 *::before {
@@ -80,6 +78,7 @@ body {
 
   &__img-box {
     max-height: 50%;
+    text-align: center;
   }
 
   &__img {
