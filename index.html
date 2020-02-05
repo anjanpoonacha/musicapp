@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Vanilla Music App</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600&display=swap" rel="stylesheet">
+
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="player-container" id="music-container">
+        <audio  src="https://edyoda.s3.ap-south-1.amazonaws.com/public/musicfiles/without-you.mp3" id="audio"></audio>
+        <div class="player__img-box">
+          <img class="player__img" src="https://m.media-amazon.com/images/I/81mNRm3F6KL._SS500_.jpg" id="img" alt="Track Image" />
+        </div>
+
+        <div class="player__progress-container" id="progress-container">
+          <div id="progress" class="player__progress">&nbsp;</div>
+        </div>
+
+        <div class="player__controls">
+          <button id="shuffle" class="action-btn">
+            <i class="fas fa-random"></i>
+          </button>
+          <button id="prev" class="action-btn">
+            <i class="fas fa-backward"></i>
+          </button>
+          <button id="play" class="action-btn action-btn-big">
+            <i class="fas fa-play"></i>
+          </button>
+          <button id="next" class="action-btn">
+            <i class="fas fa-forward"></i>
+          </button>
+        </div>
+        
+        <div class="player__track-details">
+          <h2 id="artist" class="player__artist">&nbsp;</h2>
+          <p id="title" class="player__track-name">&nbsp;</p>
+        </div>
+      </div>
+      <div class="playlist" id="playlist">
+        <!-- <div class="card">
+          <img class="card__img" src="https://m.media-amazon.com/images/I/81mNRm3F6KL._SS500_.jpg" alt="Albumn Art" />
+          <h3 class="card__artist">Artist</h3>
+          <p class="card__track-name">Fireflies</p>
+        </div>
+      </div> -->
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

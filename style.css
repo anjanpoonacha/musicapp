@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  padding: 8rem;
+  font-size: 1.6rem;
+  font-family: 'Raleway', sans-serif;
+  min-height: 100vh;
+  background-image: linear-gradient(to right bottom, #fcdddd 23%, #f7f7f7 90.8%);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.container {
+  height: max-content;
+  display: flex;
+  min-height: 50rem;
+  max-height: 70vh;
+  max-width: 60vw;
+  margin: auto;
+  border-radius: 4rem;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2), -4px -4px 4px rgba(255, 255, 255, 0.488);
+  padding: 3rem;
+  background-color: rgba(255, 225, 225, 0.527); }
+
+.player-container {
+  flex: 1;
+  border-right: 2px solid #d6cccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.playlist {
+  width: 30%;
+  padding-left: 2rem;
+  overflow-y: scroll; }
+  .playlist::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5; }
+  .playlist::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background-color: #F5F5F5; }
+  .playlist::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #fcdddde5; }
+
+.player__img-box {
+  max-height: 50%; }
+
+.player__img {
+  height: 100%; }
+
+.player__progress-container {
+  background-color: #fff;
+  height: .5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 50rem;
+  cursor: pointer; }
+
+.player__progress {
+  background-image: linear-gradient(to right bottom, #e5c3e7, #f3b7b7);
+  height: 100%; }
+
+.player__controls {
+  margin-bottom: 1.5rem; }
+
+.player__track-details {
+  text-align: center; }
+
+.player__artist {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem; }
+
+.player__track-name {
+  font-size: 2rem;
+  font-weight: 600; }
+
+.card {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: repeat(2, min-content);
+  gap: 1.5rem;
+  align-items: center;
+  margin-right: 2rem;
+  padding: 1rem 0;
+  cursor: pointer; }
+  .card:active {
+    background-color: #ecd5d5; }
+  .card:not(:last-child) {
+    border-bottom: 2px solid #decaca; }
+  .card__img {
+    height: 6rem;
+    width: 6rem;
+    grid-row: 1 / -1; }
+  .card__artist {
+    font-weight: 700; }
+
+.action-btn {
+  background-color: transparent;
+  border: 0;
+  color: #c7c2c7;
+  font-size: 1.8rem;
+  cursor: pointer;
+  padding: 1rem 1.5rem;
+  margin: 0 2rem;
+  border-radius: 3rem; }
+  .action-btn:active {
+    box-shadow: inset -4px -4px 4px rgba(255, 255, 255, 0.76), inset 4px 4px 4px rgba(0, 0, 0, 0.158); }
+
+.action-btn.action-btn-big {
+  color: #cdc2d0;
+  font-size: 2.5rem; }
+
+.action-btn:focus {
+  outline: 0; }
